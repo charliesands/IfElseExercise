@@ -29,27 +29,25 @@ namespace IfElseExercise
 
         private void changeText_Click(object sender, RoutedEventArgs e)
         {
-            if (enableCheckBox.IsChecked == true && labelToChange.HorizontalAlignment == HorizontalAlignment.Right)
+            if (enableCheckBox.IsChecked == true)
             {
-                labelToChange.Text = "Left";
-                labelToChange.HorizontalAlignment = HorizontalAlignment.Left;
-            }
-                if (enableCheckBox.IsChecked == true && labelToChange.HorizontalAlignment == HorizontalAlignment.Left) 
-                {
-                    labelToChange.Text = "Right";
-                    labelToChange.HorizontalAlignment = HorizontalAlignment.Right;
-                }
-                if (enableCheckBox.IsChecked == true)
+                if (labelToChange.Text == "Right")
                 {
                     labelToChange.Text = "Left";
                     labelToChange.HorizontalAlignment = HorizontalAlignment.Left;
                 }
                 else
                 {
-                    labelToChange.Text = "Text changing is disabled";
-                    labelToChange.HorizontalAlignment = HorizontalAlignment.Center;
-
+                    labelToChange.Text = "Right";
+                    labelToChange.HorizontalAlignment = HorizontalAlignment.Right;
                 }
+            }
+            else
+            {
+                labelToChange.Text = "Text changing is disabled";
+                labelToChange.HorizontalAlignment = HorizontalAlignment.Center;
+
+            }
         }
     }
 }
