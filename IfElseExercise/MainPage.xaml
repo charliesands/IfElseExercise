@@ -16,9 +16,9 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="changeText" Content="Change the label if checked" HorizontalAlignment="Center"/>
+        <Button x:Name="changeText" Content="Change the label if checked" HorizontalAlignment="Center" Click="changeText_Click"/>
         <CheckBox x:Name="enableCheckBox" Content="Enable label changing" Grid.Column="1" HorizontalAlignment="Center"/>
-        <TextBox x:Name="labelToChange" Grid.ColumnSpan="2" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" RenderTransformOrigin="0.082,3.16"/>
+        <TextBox x:Name="labelToChange" Grid.ColumnSpan="2" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="Press the button to change my text." VerticalAlignment="Center" RenderTransformOrigin="0.082,3.16"/>
 
     </Grid>
 </Page>
